@@ -5,7 +5,7 @@ class CountdownTimer {
         this.targetDate = new Date(tatgetDate);
     }
 
-
+    // Method to calculate the remaining time
     private calculateTimeRemaining(): {days: number, hours: number, minutes: number, seconds: number} {
         const now = new Date().getTime();
         const distance = this.targetDate.getTime() - now;
